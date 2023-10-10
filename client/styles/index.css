@@ -38,10 +38,29 @@ main button{
     border-radius: 5px;
     margin-right: 5%;
 }
+.bounce {
+    position: absolute;
+    top: 80%;
+    left: 50px;
+    width: 75px;
+    line-height: 75px;
+    text-align:center;
+    opacity: 1;
+    color:#fff;
+    border-radius:50%;
+    animation: bounce .3s infinite alternate;
+  }
+  @keyframes bounce {
+    to { transform: scale(1.2); }
+  }
+
 @media screen and (max-width:884px){
     main img{
         height: 80%;
         width: 50%;
+    }
+    .bounce {
+       top: 83%;
     }
     .mainsub{
         width:50% ;
