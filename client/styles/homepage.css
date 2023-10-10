@@ -1,0 +1,212 @@
+main{
+    margin-top: 21vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2%;
+    width: 100vw;
+    
+    
+}
+
+
+/* main img{
+    height: 10%;
+    width: 10%;
+} */
+.bigpic{
+    width: 80%;  
+    display: flex;
+    height: 79vh;
+    flex-direction: column;
+    border-radius: 20px;
+    align-items: center;
+    -webkit-box-shadow: 1px 1px 6px 2px rgba(115,103,103,1);
+    -moz-box-shadow: 1px 1px 6px 2px rgba(115,103,103,1);
+    box-shadow: 1px 1px 6px 2px rgba(115,103,103,1);
+
+}
+.bigpic h3, .starter h2{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #f4e408 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #a61d9d 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      /* font-size: 190px; */
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.bigpic img{
+    width: 80%;
+   height: 70%;
+   margin-bottom: 2vh;
+border-radius: 50%;
+}
+main .bigpic div{
+    width: 80%;
+    height: 30%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+main .bigpic div a{
+    width: 15%;
+}
+main  button{
+    color: white; 
+    padding: 8%;
+    width: 100%;
+    background-color:rgb(245, 222, 19);
+    border-radius: 20%;
+    border: none;
+    /* margin-bottom: 3%; */
+    transition: 0.5s ease;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px 0px rgba(140,128,128,0.89);
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(140,128,128,0.89);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(140,128,128,0.89);
+}
+/* .recipediv{
+    display: flex;
+    -webkit-box-shadow: 2px 5px 20px 6px #999999; 
+    box-shadow: 2px 5px 20px 6px #999999;
+    margin-bottom: 5rem;
+    font-family: 'Poppins', sans-serif;
+}
+.recipediv img{
+    height: 80%;
+    width: 20%;
+}
+.procedures{
+    width: 30rem;
+    height: 20rem;
+
+}
+.procedures p{
+overflow: hidden;
+white-space: wrap;
+text-overflow: ellipsis;
+height: 100px;
+} */
+.starter{
+ width: 90vw;
+ height: 100vh;
+ padding-top: 21vh;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+.starterrecipes{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.starterrecipes div{
+    height:100%;
+    width: 23%;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    -webkit-box-shadow: 1px 1px 6px 2px rgba(115,103,103,1);
+    -moz-box-shadow: 1px 1px 6px 2px rgba(115,103,103,1);
+    box-shadow: 1px 1px 6px 2px rgba(115,103,103,1);
+}
+.starterrecipes img{
+    height: 50%;
+    width: 100%;
+    border-radius: 10%;
+}
+.starter a{
+ width: 70%;
+}
+.starter .backtotop{
+    width: unset;
+    width: 2%;
+}
+/* #cocktails {
+    border: 1px solid olivedrab;
+} */
+#cocktails .starterrecipes{
+    width: 100%;
+
+}
+.bigpic div br{
+    display: none;
+}
+@media screen and (max-width:576px){
+    .bigpic h3, .starter h2,main{
+        text-align: center;
+    }
+    .bigpic button{
+        flex-wrap: wrap;
+        display: unset;
+        color: black;
+        width: 5rem;
+    }
+    .bigpic div br{
+        display: block;
+    }
+    .starter{
+        width: 100vw;
+        padding-top: 15vh;
+    }
+    main .bigpic div{
+        width: 95%;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    main .bigpic div a {
+        display: flex;
+        align-items: center;
+        width: 30%;
+    }
+   main  .bigpic div  a button {
+        width: 100%;
+
+    }
+    /* .starterrecipes img{
+
+    } */
+    .starterrecipes{
+        flex-direction: column;
+        /* gap: 10%; */
+    }
+    .starterrecipes div{
+        height:fit-content;
+        width: fit-content;
+        border-radius: 10%;
+        flex-direction: row;
+    }
+    .starterrecipes img {
+        height: 120px;
+        width: 90px;
+    }
+    main .starter button {
+        width: fit-content;
+        font-size: 14px;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,30 @@
+footer{
+    margin-top: 10%;
+    height: 100px;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    font-family: 'Poppins', sans-serif;
+}
+.social{
+    display: flex;
+}
+.social svg, footer a {
+    margin:0 1rem;
+}
+@media screen and (max-width:576px){
+    footer a{
+        font-size: 10px;
+    }
+    footer{
+        margin-top: 5%;
+        height: 15vh;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+        width: 98vw;
+    }
+   
+}

@@ -1,0 +1,86 @@
+main{
+    height: 80vh;
+    width: 98vw;
+    display: flex;
+    align-items: center;
+    padding-left:  3%;
+    margin-top: 20vh;
+   
+    /* border: 1px solid greenyellow; */
+   
+}
+main img{
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid greenyellow; */
+}
+.mainsub{
+    /* border: 1px solid red; */
+    width: 55%;
+    margin-right: 5%;
+
+}
+.mainsub h1{
+    color: rgb(245, 222, 19);
+    font-family: 'Luxurious Roman', cursive;
+    margin-bottom: 2%;
+}
+main h4{
+    line-height: 25px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 10%;
+}
+main button{
+    background-color:rgb(245, 222, 19) ;
+    font-size: 16px;
+    padding: 6px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5%;
+}
+@media screen and (max-width:884px){
+    main img{
+        height: 80%;
+        width: 50%;
+    }
+    .mainsub{
+        width:50% ;
+    }
+    main{
+        text-align: center;
+    }
+    .mainsub h1{
+        font-size:40px ;
+        width: 100%;
+    }
+    .mainsub h4{
+        margin-bottom: 10%;
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:576px){
+    main{
+       flex-direction: column; 
+       text-align: center;
+       padding-left: unset;
+    }
+    .mainsub{
+        width: 90%;
+        height:40%;
+        margin-right: 0;
+    }
+    .mainsub h1{
+        font-size:26px ;
+        width: 100%;
+    }
+    .mainsub h4{
+        margin-bottom: 4%;
+    }
+    main img{
+        height: 60%;
+        width: 99.9vw;
+    }
+    main button{
+        margin-right: 0;
+    }
+}

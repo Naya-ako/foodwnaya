@@ -1,0 +1,61 @@
+*{
+    padding: 0%;
+    box-sizing: border-box;
+    margin: 0%;
+    cursor: pointer;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 20vh;
+    background-color: yellow;
+    padding-left: 5%;
+    padding-right: 5%;
+    position:fixed;
+    top: 0;
+    left: 0;
+}
+header h1{
+    font-family: 'Lobster', cursive;
+    font-size: 48px;
+
+}
+ a{
+   text-decoration: none;
+   color: black;
+}
+button:active{
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+.profile img{
+    height: 70px;
+    width: 70px;
+    border-radius: 35px;
+}
+.profile svg{
+   width: 40px;
+    
+}
+.profile button{
+    background-color: transparent;
+    border: none;
+}
+.profile{
+    display: flex;
+    align-items: center;
+
+}
+@media screen and (max-width:576px){
+    header a h1{
+        font-size: 32px;
+    }
+    header{
+        height: 15vh;
+    }
+}
